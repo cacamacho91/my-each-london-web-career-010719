@@ -16,6 +16,4 @@ my_each([1,2,3,4]) do |x|
   print x
 end
 
-my_each([1,2,3,4]) do
-  print "test"
-end
+my_each([1,2,3,4]) 
