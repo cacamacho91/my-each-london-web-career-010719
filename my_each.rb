@@ -5,4 +5,5 @@ def my_each(array)
     yield(array[iterator])
     iterator += 1
   end
+  array
 end
