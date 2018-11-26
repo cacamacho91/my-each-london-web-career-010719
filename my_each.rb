@@ -7,3 +7,7 @@ def my_each(array)
   end
   array
 end
+
+[1,2,3,4].my_each do |x|
+  print x
+end
