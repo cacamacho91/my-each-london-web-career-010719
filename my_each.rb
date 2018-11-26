@@ -8,6 +8,6 @@ def my_each(array)
   array
 end
 
-[1,2,3,4].my_each do |x|
+my_each([1,2,3,4]) do |x|
   print x
 end
