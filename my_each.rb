@@ -1,11 +1,15 @@
 def my_each(array)
   iterator = 0
 
-  while iterator < array.length
-    yield(array[iterator])
-    iterator += 1
+  if block_given?
+    while iterator < array.length
+      yield(array[iterator])
+      iterator += 1
+    end
+    array
+  else
+    puts "give me a block please :)"
   end
-  array
 end
 
 my_each([1,2,3,4]) do |x|
